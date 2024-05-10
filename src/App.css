@@ -10,8 +10,7 @@
 .hero {
     height: 600px; 
     width: auto;
-    background-image: url(src/assets/imgs/Hero\ Section.png); 
-    background-position: center; 
+    background-image: url(src/assets/imgs/Hero\ Section.png);  
     background-size: 100%; 
     background-repeat: no-repeat; 
 }
