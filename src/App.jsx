@@ -15,7 +15,7 @@ function App() {
       <div>
         <Hero />
       </div>
-      <div>  
+      <div className='pl-28'>  
         <Footer />
       </div>
     </div>
