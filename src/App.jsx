@@ -8,10 +8,16 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className=''>
-      <Navbar />
-      <Hero />
-      <Footer />
+    <div className='flex flex-col'>
+      <div>
+        <Navbar />
+      </div>
+      <div>
+        <Hero />
+      </div>
+      <div>  
+        <Footer />
+      </div>
     </div>
   )
 }

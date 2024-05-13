@@ -3,7 +3,7 @@ import '../App.css';
 function Navbar() {
   return (
     <div>
-        <nav className="navbar z-10 p-1 flex w-screen fixed top-5" id="home">
+        <nav className="navbar z-10 p-1 flex w-screen top-5" id="home">
             <div className="w-1/3 flex pl-10 justify-start ml-8">
                 <p> <img src="src\assets\icons\Logo.svg" alt="" width="50px" height="50px" /></p>
             </div>

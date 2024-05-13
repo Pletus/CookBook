@@ -1,7 +1,7 @@
 
 function Footer() {
   return (
-    <div className="bottom-0 fixed inset-x-0">
+    <div className="bottom-0 inset-x-0">
         <footer className="bg-white py-14 px-14">
         <div className="container mx-auto flex justify-between items-center mt-10 mb-10 ml-24 mr-24">
             <div className="flex items-center">
