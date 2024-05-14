@@ -12,8 +12,8 @@ const client = createClient({
 });
 
 function App() {
-  const [data, setData] = useState({});
-  console.log(data);
+  const [data, setData] = useState([]);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -23,8 +23,8 @@ function App() {
         console.error(error);
       }
     };
-    console.log(data);
     fetchData();
+    console.log(data);
   }, []);
 
   return (
@@ -39,8 +39,7 @@ function App() {
         <Footer />
       </div>
       <div>
-        <Recipe />
-        <h1>{}</h1>
+        <Recipe data={data} />
       </div>
     </div>
   );

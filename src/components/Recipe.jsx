@@ -1,11 +1,17 @@
-function Recipe() {
-  console.log();
+import { useState } from "react";
+
+function Recipe({ data }) {
+  console.log(data);
+
   return (
     <div>
       <h2></h2>
       <div></div>
-      <h1 className="text-black text-center">QUE COSAS</h1>
-      {/* <h1 className="text-black text-center">{recipe.fields.title}</h1> */}
+      {data.map((receta, index) => (
+        <h1 className="text-black text-center" key={index}>
+          {receta.fields.title}
+        </h1>
+      ))}
     </div>
   );
 }
