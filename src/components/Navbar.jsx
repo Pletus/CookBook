@@ -14,7 +14,7 @@ function Navbar() {
             </div>
             <div className="flex space-x-6 gap-12 text-xs justify-end mr-6 w-5/6 pr-10 pt-2">
                 <div className='flex gap-10 pr-6'>
-                    <input type="text" placeholder='...' className='text-black drop-shadow-lg inline-block align-middle text-center inputbox align-middle' />
+                    <input type="text" placeholder='...' className='text-black drop-shadow-lg inline-block text-center inputbox align-middle' />
                     <button><img src="src/assets/icons/search-svgrepo-com.svg" alt="Search" width="24px" height="24px" /></button>
                 </div>
                 <div className='pt-2'>

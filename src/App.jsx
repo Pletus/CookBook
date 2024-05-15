@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import { createClient } from "contentful";
+import Main from './components/Main';
 
 const client = createClient({
   space: "pr9cy2bmpopx",
@@ -33,6 +34,7 @@ function App() {
       </div>
       <div>
         <Hero />
+        <Main />
       </div>
       <div className="pl-28">
         <Footer />
