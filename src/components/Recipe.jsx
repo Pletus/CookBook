@@ -39,19 +39,28 @@ function Recipe({ data }) {
               </div>
             </div>
           </section>
-          <section className="w-full fixed-sec-size flex">
-            <div className="w-1/2">
-              <ol>
-                <li className="text-black flex flex-col p-40">
-                  {recipe.fields.ingredients}
-                </li>
+          <section className="w-full fixed-sec-size flex p-16">
+            <div className="w-1/3 align-center">
+              <ol className="flex grid gap-8">
+                <h1 className="text-5xl pb-4">Ingredients</h1>
+                {recipe.fields.ingredients.map((ingredient, index) => (
+                  <div>
+                    <li key={index} className="text-black text-2xl">
+                      {ingredient}
+                    </li>
+                  </div>
+                ))}
               </ol>
             </div>
-            <div className="w-1/2">
-              <ol>
-                <li className="text-black flex flex-col p-20">
-                  {recipe.fields.steps}
-                </li>
+            <div className="divider"></div>
+            <div className="w-2/3 pl-12">
+              <ol className="flex grid gap-8">
+                <h1 className="text-5xl pb-4">Steps</h1>
+                {recipe.fields.steps.map((step, index) => (
+                  <li key={index} className="text-black text-2xl">
+                    {step}
+                  </li>
+                ))}
               </ol>
             </div>
           </section>
