@@ -8,8 +8,8 @@ import Recipe from './components/Recipe'
 import "./App.css";
 
 const client = createClient({
-  space: import.meta.env.CONTENTFULL_SPACE_ID,
-  accessToken: import.meta.env.CONTENTFULL_DELIVERY_TOKEN,
+  space: "pr9cy2bmpopx",
+  accessToken: "a_BYJ3l6XTHr9msqs8m8UXVCSmlEeqfZcjtP14YqFGo",
 });
 
 function App() {
