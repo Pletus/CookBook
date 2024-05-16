@@ -1,13 +1,16 @@
 import { useState, useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
 import { createClient } from "contentful";
+import { ContentfulClient, ContentfulProvider } from "react-contentful";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import Main from "./components/Main";
 import Recipe from "./components/Recipe";
 import "./App.css";
+import Layout from "./components/Layout";
 
-const client = createClient({
+const contentfulClient = createClient({
   space: "pr9cy2bmpopx",
   accessToken: "a_BYJ3l6XTHr9msqs8m8UXVCSmlEeqfZcjtP14YqFGo",
 });
@@ -18,7 +21,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await client.getEntries({});
+        const response = await contentfulClient.getEntries({});
         setData(response.items);
       } catch (error) {
         console.error(error);
@@ -29,21 +32,14 @@ function App() {
   }, []);
 
   return (
-    <div className="flex flex-col">
-      <div>
-        <Navbar />
-      </div>
-      <div>
-        <Hero />
-        <Main />
-      </div>
-      <div className="pl-28">
-        <Footer />
-      </div>
-      <div>
-        <Recipe data={data} />
-      </div>
-    </div>
+    <ContentfulProvider client={contentfulClient}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Main />} />
+          <Route path="/recipe/:id" element={<Recipe data={data} />} />
+        </Route>
+      </Routes>  
+    </ContentfulProvider>
   );
 }
 

@@ -12,6 +12,7 @@
   "dependencies": {
     "contentful": "^10.10.0",
     "react": "^18.2.0",
+    "react-contentful": "^2.0.31",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1"
   },

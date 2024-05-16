@@ -1,15 +1,21 @@
 import { useState } from "react";
-// import {useParams} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 function Recipe({ data }) {
+  
+
+  const { id } = useParams()
+  const recipe = data.find(recipe => recipe.sys.id === id);
   console.log(data);
-  // const { id } = useParams()
+  if (!recipe) {
+    return <div>Receta no encontrada.</div>;
+  }
+  console.log(data);
   return (
     <div>
       <h2></h2>
       <div></div>
       {/* method find */}
-      {data.map((recipe, index) => (
         <div className="flex flex-col">
           <section key={recipe.sys.id}>
             <div className="relative mt-4 bg-white rounded overflow-hidden shadow-md">
@@ -42,7 +48,9 @@ function Recipe({ data }) {
           <section className="w-full fixed-sec-size flex p-16">
             <div className="w-1/3 align-center">
               <ol className="flex grid gap-8">
-                <span className="text-5xl pb-4 pl-5 pt-1 w-1/2 rounded-lg rounded-lg shadow-md border-2 border-gray-900">Ingredients</span>
+                <span className="text-5xl pb-4 pl-5 pt-1 w-2/3 rounded-lg rounded-lg shadow-md border-2 border-gray-900">
+                  Ingredients
+                </span>
                 {recipe.fields.ingredients.map((ingredient, index) => (
                   <div>
                     <li key={index} className="text-black text-2xl">
@@ -55,7 +63,9 @@ function Recipe({ data }) {
             <div className="divider"></div>
             <div className="w-2/3 pl-12">
               <ol className="flex grid gap-8">
-                <h1 className="text-5xl pb-4 pl-8 pt-2 w-1/6 rounded-lg rounded-lg shadow-md border-2 border-gray-900">Steps</h1>
+                <h1 className="text-5xl pb-4 pl-8 pt-2 w-1/5 rounded-lg rounded-lg shadow-md border-2 border-gray-900">
+                  Steps
+                </h1>
                 {recipe.fields.steps.map((step, index) => (
                   <li key={index} className="text-black text-2xl">
                     {step}
@@ -65,7 +75,6 @@ function Recipe({ data }) {
             </div>
           </section>
         </div>
-      ))}
     </div>
   );
 }
