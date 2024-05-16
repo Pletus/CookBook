@@ -1,6 +1,7 @@
 import App from "../App";
 import { NavLink, Outlet } from "react-router-dom";
 import { useContentful } from "react-contentful";
+import { useEffect } from "react";
 
 function Layout() {
   return (
