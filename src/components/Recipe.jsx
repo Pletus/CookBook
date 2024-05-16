@@ -42,7 +42,7 @@ function Recipe({ data }) {
           <section className="w-full fixed-sec-size flex p-16">
             <div className="w-1/3 align-center">
               <ol className="flex grid gap-8">
-                <h1 className="text-5xl pb-4">Ingredients</h1>
+                <span className="text-5xl pb-4 pl-5 pt-1 w-1/2 rounded-lg rounded-lg shadow-md border-2 border-gray-900">Ingredients</span>
                 {recipe.fields.ingredients.map((ingredient, index) => (
                   <div>
                     <li key={index} className="text-black text-2xl">
@@ -55,7 +55,7 @@ function Recipe({ data }) {
             <div className="divider"></div>
             <div className="w-2/3 pl-12">
               <ol className="flex grid gap-8">
-                <h1 className="text-5xl pb-4">Steps</h1>
+                <h1 className="text-5xl pb-4 pl-8 pt-2 w-1/6 rounded-lg rounded-lg shadow-md border-2 border-gray-900">Steps</h1>
                 {recipe.fields.steps.map((step, index) => (
                   <li key={index} className="text-black text-2xl">
                     {step}
