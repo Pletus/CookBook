@@ -1,16 +1,25 @@
 .navbar {
-    height: 4rem;
+  height: 4rem;
 }
 
 .inputbox {
-    max-height: 20px;
-    margin-top: 12px;
+  max-height: 20px;
+  margin-top: 12px;
 }
 
 .hero {
-    height: 600px; 
-    width: auto;
-    background-image: url(src/assets/imgs/Hero\ Section.png);  
-    background-size: 100%; 
-    background-repeat: no-repeat; 
+  height: 600px;
+  width: auto;
+  background-image: url(src/assets/imgs/Hero\ Section.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.text-container {
+  height: 10rem;
+}
+
+.fixed-sec-size {
+  width: 1500px;
+  height: 610px;
 }

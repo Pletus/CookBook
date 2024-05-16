@@ -3,8 +3,8 @@ import { createClient } from "contentful";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
-import Main from './components/Main';
-import Recipe from './components/Recipe'
+import Main from "./components/Main";
+import Recipe from "./components/Recipe";
 import "./App.css";
 
 const client = createClient({
@@ -27,7 +27,6 @@ function App() {
     fetchData();
     console.log(data);
   }, []);
-
 
   return (
     <div className="flex flex-col">
