@@ -10,7 +10,7 @@ function Recipe({ data }) {
   const recipe = data.find((recipe) => recipe.fields.id === recipeId);
 
   return (
-    <div key={recipe}>
+    <div key={id}>
       <div className="flex flex-col">
         <section>
           <div className="relative mt-4 bg-white rounded overflow-hidden shadow-md">

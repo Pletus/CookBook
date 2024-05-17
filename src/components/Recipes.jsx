@@ -8,6 +8,9 @@ import salmonImage from "../assets/imgs/salmon.png";
 import masalaImage from "../assets/imgs/masala.png";
 import stewImage from "../assets/imgs/stew.png";
 import cakeImage from "../assets/imgs/cake.png";
+import calories from '../assets/icons/calories.svg';
+import portion from '../assets/icons/portion.svg';
+import Recipe from "./Recipe";
 
 
 function Recipes() {
