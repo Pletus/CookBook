@@ -3,7 +3,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import { useContentful } from "react-contentful";
 import { useEffect } from "react";
 
-function Layout() {
+function Layout({ data }) {
   return (
     <div>
         <nav className="navbar z-10 p-1 flex w-screen top-5" id="home">

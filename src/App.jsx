@@ -2,13 +2,10 @@ import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import { createClient } from "contentful";
 import { ContentfulClient, ContentfulProvider } from "react-contentful";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Footer from "./components/Footer";
 import Main from "./components/Main";
 import Recipe from "./components/Recipe";
-import "./App.css";
 import Layout from "./components/Layout";
+import "./App.css";
 
 const contentfulClient = createClient({
   space: "pr9cy2bmpopx",
