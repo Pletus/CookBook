@@ -29,141 +29,6 @@ function Main() {
         </a>
       </section>
       <main>
-      <section className="mx-40 my-20">
-          <h2 className="text-gray-700 text-4xl mt-10 font-serif">
-            Our Newest Recipes
-          </h2>
-          <hr className="border-orange-500 border-1 mt-2" />
-          <div className="grid lg:grid-cols-4 gap-4">
-            <div className="my-10 shadow-md rounded overflow-hidden">
-              <NavLink to="./recipe/2">
-                <img
-                  className="w-full h-32 sm:h-64 object-cover"
-                  src={salmonImage}
-                  alt="Lachs"
-                />
-              </NavLink>
-              <h3 className="my-5 pl-3 text-md font-bold">Steamed Salmon</h3>
-              <div className="pl-40 flex">
-                <img
-                  className="rounded-full size-12"
-                  src={person1Image}
-                  alt="denis"
-                />
-                <h3 className="my-5 pl-3 text-md font-bold">Denis</h3>
-              </div>
-            </div>
-            <div className="my-10 shadow-md rounded overflow-hidden">
-              <NavLink to="./recipe/3">
-                <img
-                  className="w-full h-32 sm:h-64 object-cover"
-                  src={masalaImage}
-                  alt="masala"
-                />
-              </NavLink>
-              <h3 className="my-5 pl-3 text-md font-bold">Chicken Masala</h3>
-              <div className="pl-40 flex">
-                <img
-                  className="rounded-full size-12"
-                  src={person2Image}
-                  alt="anitha"
-                />
-                <h3 className="my-5 pl-3 text-md font-bold">Anitha</h3>
-              </div>
-            </div>
-            <div className="my-10 shadow-md rounded overflow-hidden">
-              <NavLink to="./recipe/4">
-                <img
-                  className="w-full h-32 sm:h-64 object-cover"
-                  src={stewImage}
-                  alt="rabbit"
-                />
-              </NavLink>
-              <h3 className="my-5 pl-3 text-md font-bold">Rabbit Stew</h3>
-              <div className="pl-40 flex">
-                <img
-                  className="rounded-full size-12"
-                  src={person3Image}
-                  alt="yago"
-                />
-                <h3 className="my-5 pl-3 text-md font-bold">Yago</h3>
-              </div>
-            </div>
-            <div className="my-10 shadow-md rounded overflow-hidden">
-              <NavLink to="./recipe/1">
-                <img
-                  className="w-full h-32 sm:h-64 object-cover"
-                  src={cakeImage}
-                  alt="vanilla"
-                />
-              </NavLink>
-              <h3 className="my-5 pl-3 text-md font-bold">Vanilla Cake</h3>
-              <div className="pl-40 flex">
-                <img
-                  className="rounded-full size-12"
-                  src={person4Image}
-                  alt="rabia"
-                />
-                <h3 className="my-3 pl-3 text-md font-bold">Rabia</h3>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="mx-40">
-          <div className="relative">
-            <h4 className="text-gray-700 text-4xl mt-20 font-serif">
-              We Love To Eat
-            </h4>
-            <hr className="border-orange-500 border-1 mb-6 mt-2" />
-            <div className="grid grid-cols-3 gap-8">
-              <div className="col-span-2">
-                <img
-                  src={cookingImage}
-                  alt="Cooking"
-                  className="w-full object-cover rounded overflow-hidden shadow-md"
-                />
-                <a href="/">
-                  <h1 className="sm:text-eft absolute top-1/2 mt-8 left-1/3 transform -translate-x-1/2 -translate-y-1/2 text-4xl text-dark font-semibold font-serif">
-                    Quick & Easy Recipes
-                  </h1>
-                </a>
-              </div>
-              <div className="grid grid-cols-1 gap-4">
-                <div className="bg-white rounded overflow-hidden shadow-md relative">
-                  <a href="/">
-                    <img
-                      src={samosaImage}
-                      alt="samosa"
-                      className="w-full h-32 sm:h-72 object-cover mb-5"
-                    />
-                  </a>
-                  <a href="/">
-                    <span className="font-bold no-underline hover:underline font-serif px-2">
-                      Chili Samosa
-                    </span>
-                    <br />
-                  </a>
-                </div>
-                <div className="bg-white rounded overflow-hidden shadow-md relative">
-                  <a href="/">
-                    <img
-                      src={mantiImage}
-                      alt="manti"
-                      className="w-full h-32 sm:h-72 object-cover"
-                    />
-                  </a>
-                  <a href="/">
-                    <span className="font-bold no-underline hover:underline font-serif px-2">
-                      Mantu
-                    </span>
-                    <br />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <section className="mx-40" id="recipes">
           <div>
             <div>
@@ -282,6 +147,141 @@ function Main() {
                     <span className="fa fa-star"></span>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-40">
+          <div className="relative">
+            <h4 className="text-gray-700 text-4xl mt-20 font-serif">
+              We Love To Eat
+            </h4>
+            <hr className="border-orange-500 border-1 mb-6 mt-2" />
+            <div className="grid grid-cols-3 gap-8">
+              <div className="col-span-2">
+                <img
+                  src={cookingImage}
+                  alt="Cooking"
+                  className="w-full object-cover rounded overflow-hidden shadow-md"
+                />
+                <a href="/">
+                  <h1 className="sm:text-eft absolute top-1/2 mt-8 left-1/3 transform -translate-x-1/2 -translate-y-1/2 text-4xl text-dark font-semibold font-serif">
+                    Quick & Easy Recipes
+                  </h1>
+                </a>
+              </div>
+              <div className="grid grid-cols-1 gap-4">
+                <div className="bg-white rounded overflow-hidden shadow-md relative">
+                  <a href="/">
+                    <img
+                      src={samosaImage}
+                      alt="samosa"
+                      className="w-full h-32 sm:h-72 object-cover mb-5"
+                    />
+                  </a>
+                  <a href="/">
+                    <span className="font-bold no-underline hover:underline font-serif px-2">
+                      Chili Samosa
+                    </span>
+                    <br />
+                  </a>
+                </div>
+                <div className="bg-white rounded overflow-hidden shadow-md relative">
+                  <a href="/">
+                    <img
+                      src={mantiImage}
+                      alt="manti"
+                      className="w-full h-32 sm:h-72 object-cover"
+                    />
+                  </a>
+                  <a href="/">
+                    <span className="font-bold no-underline hover:underline font-serif px-2">
+                      Mantu
+                    </span>
+                    <br />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="mx-40 my-20">
+          <h2 className="text-gray-700 text-4xl mt-10 font-serif">
+            Our Newest Recipes
+          </h2>
+          <hr className="border-orange-500 border-1 mt-2" />
+          <div className="grid lg:grid-cols-4 gap-4">
+            <div className="my-10 shadow-md rounded overflow-hidden">
+              <NavLink to="./recipe/2">
+                <img
+                  className="w-full h-32 sm:h-64 object-cover"
+                  src={salmonImage}
+                  alt="Lachs"
+                />
+              </NavLink>
+              <h3 className="my-5 pl-3 text-md font-bold">Steamed Salmon</h3>
+              <div className="pl-40 flex">
+                <img
+                  className="rounded-full size-12"
+                  src={person1Image}
+                  alt="denis"
+                />
+                <h3 className="my-5 pl-3 text-md font-bold">Denis</h3>
+              </div>
+            </div>
+            <div className="my-10 shadow-md rounded overflow-hidden">
+              <NavLink to="./recipe/3">
+                <img
+                  className="w-full h-32 sm:h-64 object-cover"
+                  src={masalaImage}
+                  alt="masala"
+                />
+              </NavLink>
+              <h3 className="my-5 pl-3 text-md font-bold">Chicken Masala</h3>
+              <div className="pl-40 flex">
+                <img
+                  className="rounded-full size-12"
+                  src={person2Image}
+                  alt="anitha"
+                />
+                <h3 className="my-5 pl-3 text-md font-bold">Anitha</h3>
+              </div>
+            </div>
+            <div className="my-10 shadow-md rounded overflow-hidden">
+              <NavLink to="./recipe/4">
+                <img
+                  className="w-full h-32 sm:h-64 object-cover"
+                  src={stewImage}
+                  alt="rabbit"
+                />
+              </NavLink>
+              <h3 className="my-5 pl-3 text-md font-bold">Rabbit Stew</h3>
+              <div className="pl-40 flex">
+                <img
+                  className="rounded-full size-12"
+                  src={person3Image}
+                  alt="yago"
+                />
+                <h3 className="my-5 pl-3 text-md font-bold">Yago</h3>
+              </div>
+            </div>
+            <div className="my-10 shadow-md rounded overflow-hidden">
+              <NavLink to="./recipe/1">
+                <img
+                  className="w-full h-32 sm:h-64 object-cover"
+                  src={cakeImage}
+                  alt="vanilla"
+                />
+              </NavLink>
+              <h3 className="my-5 pl-3 text-md font-bold">Vanilla Cake</h3>
+              <div className="pl-40 flex">
+                <img
+                  className="rounded-full size-12"
+                  src={person4Image}
+                  alt="rabia"
+                />
+                <h3 className="my-3 pl-3 text-md font-bold">Rabia</h3>
               </div>
             </div>
           </div>

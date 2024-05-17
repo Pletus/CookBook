@@ -2,6 +2,7 @@ import App from "../App";
 import { NavLink, Outlet } from "react-router-dom";
 import { useContentful } from "react-contentful";
 import { useEffect } from "react";
+import logo from '../assets/icons/Logo.svg';
 
 function Layout() {
   return (
@@ -10,7 +11,7 @@ function Layout() {
           <div className="w-1/3 flex pl-10 justify-start ml-8">
             <p>
               <img
-                src="src\assets\icons\Logo.svg"
+                src={logo}
                 alt=""
                 width="50px"
                 height="50px"
@@ -22,10 +23,10 @@ function Layout() {
               <NavLink to='/'>Home</NavLink>
             </button>
             <button className="text-black hover:bg-green-300 p-2 rounded-md">
-              <a href="">Recipes</a>
+              <NavLink to='/recipes'>Recipes</NavLink>
             </button>
             <button className="text-black hover:bg-green-300 p-2 rounded-md">
-              <a href="#about-us">About us</a>
+              <NavLink to='/about'>About us</NavLink>
             </button>
           </div>
           <div className="flex space-x-6 gap-12 text-xs justify-end mr-6 w-5/6 pr-10 pt-2">

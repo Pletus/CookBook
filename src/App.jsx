@@ -6,6 +6,8 @@ import Main from "./components/Main";
 import Recipe from "./components/Recipe";
 import Layout from "./components/Layout";
 import "./App.css";
+import AboutUs from "./components/AboutUs";
+import Recipes from "./components/Recipes";
 
 const contentfulClient = createClient({
   space: "pr9cy2bmpopx",
@@ -34,6 +36,9 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Main />} />
           <Route path="/recipe/:id" element={<Recipe data={data} />} />
+          <Route path="/recipes/recipe/:id" element={<Recipe data={data} />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/recipes" element={<Recipes />} />
         </Route>
       </Routes>  
     </ContentfulProvider>
