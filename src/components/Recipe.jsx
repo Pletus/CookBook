@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useContentful } from "react-contentful";
+import calories from '../assets/icons/calories.svg';
+import portion from '../assets/icons/portion.svg';
 
 function Recipe({ data }) {
   const { id } = useParams();
@@ -23,13 +25,13 @@ function Recipe({ data }) {
               </h1>
               <div className="flex flex-col gap-12 bg-white p-3 mt-10 rounded-lg shadow-md border-2 border-gray-900">
                 <div>
-                  <img src="src\assets\icons\calories.svg" alt="calories" />
+                  <img src={calories} alt="calories" />
                   <h6 className="text-center text-black pt-2">
                     {recipe.fields.calories} calories
                   </h6>
                 </div>
                 <div className="">
-                  <img src="src\assets\icons\portion.svg" alt="portion" />
+                  <img src={portion} alt="portion" />
                   <h6 className="text-center text-black pt-2 ">
                     {recipe.fields.portions} portions
                   </h6>
