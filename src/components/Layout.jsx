@@ -1,8 +1,15 @@
 import App from "../App";
 import { NavLink, Outlet } from "react-router-dom";
-import { useContentful } from "react-contentful";
-import { useEffect } from "react";
 import logo from '../assets/icons/Logo.svg';
+import search from "../assets/icons/search-svgrepo-com.svg";
+import linkedin from "../assets/icons/linkedin.svg";
+import instagram from "../assets/icons/instagram.svg";
+import facebook from "../assets/icons/facebook.svg";
+import pinterest from "../assets/icons/pinterest.svg";
+import write from "../assets/icons/write.svg";
+import profile from "../assets/icons/profile.svg";
+import tiktok from "../assets/icons/tiktok.svg";
+import youtube from "../assets/icons/youtube.svg";
 
 function Layout() {
   return (
@@ -31,23 +38,19 @@ function Layout() {
           </div>
           <div className="flex space-x-6 gap-12 text-xs justify-end mr-6 w-5/6 pr-10 pt-2">
             <div className="flex gap-10 pr-6">
-              <input
-                type="text"
-                placeholder="..."
-                className="text-black drop-shadow-lg inline-block text-center inputbox align-middle"
-              />
               <button>
                 <img
-                  src="src/assets/icons/search-svgrepo-com.svg"
+                  src={search}
                   alt="Search"
                   width="24px"
                   height="24px"
                 />
+                <p>Search</p>
               </button>
             </div>
             <div className="pt-2">
               <img
-                src="src/assets/icons/profile.svg"
+                src={profile}
                 alt="Profile"
                 width="24px"
                 height="24px"
@@ -56,7 +59,7 @@ function Layout() {
             </div>
             <div className="pt-2">
               <img
-                src="src/assets/icons/write.svg"
+                src={write}
                 alt="Write"
                 width="24px"
                 height="24px"
@@ -73,7 +76,7 @@ function Layout() {
         <div className="container mx-auto flex justify-between items-center mt-10 mb-10 ml-24 mr-24">
             <div className="flex items-center">
                 <div className="mr-10">
-                    <img src="src\assets\icons\Logo.svg" alt="Logo" className="h-24 w-auto" />
+                    <img src={logo}alt="Logo" className="h-24 w-auto" />
                 </div>
             </div>
     
@@ -98,24 +101,24 @@ function Layout() {
     
                 <div className="flex mb-6">
                     <div className="mr-6">
-                        <img src="src\assets\icons\tiktok.svg" alt="Tiktok" className="h-8 w-auto" />
+                        <img src={tiktok} alt="Tiktok" className="h-8 w-auto" />
                     </div>
                     <div className="mr-6">
-                        <img src="src\assets\icons\facebook.svg" alt="Facebook" className="h-8 w-auto" />
+                        <img src={facebook} alt="Facebook" className="h-8 w-auto" />
                     </div>
                     <div>
-                        <img src="src\assets\icons\pinterest.svg" alt="Pinterest" className="h-8 w-auto" />
+                        <img src={pinterest} alt="Pinterest" className="h-8 w-auto" />
                     </div>
                 </div>
                 <div className="flex">
                     <div className="mr-6">
-                        <img src="src\assets\icons\youtube.svg" alt="YouTube" className="h-8 w-auto" />
+                        <img src={youtube} alt="YouTube" className="h-8 w-auto" />
                     </div>
                     <div className="mr-6">
-                        <img src="src\assets\icons\instagram.svg" alt="Instagram" className="h-8 w-auto" />
+                        <img src={instagram }alt="Instagram" className="h-8 w-auto" />
                     </div>
                     <div>
-                        <img src="src\assets\icons\linkedin.svg" alt="LinkedIn" className="h-8 w-auto" />
+                        <img src={linkedin} alt="LinkedIn" className="h-8 w-auto" />
                     </div>
                 </div>
             </div>
