@@ -19,7 +19,7 @@ function App() {
       .then(data => setData(data))
       .catch(error => console.error("Error fetching all recipes:", error));
   }, []);
-
+  console.log(data)
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
